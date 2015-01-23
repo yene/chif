@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AC629DE91A72971F0009D6E7 /* star-md-@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC629DE81A72971F0009D6E7 /* star-md-@2x.png */; };
 		AC629DEB1A7299F50009D6E7 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC629DEA1A7299F50009D6E7 /* MessageUI.framework */; };
+		AC629DED1A729DB60009D6E7 /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = AC629DEC1A729DB60009D6E7 /* screenshot.png */; };
 		ACFA0DDB1A7278C900A8BF7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFA0DDA1A7278C900A8BF7B /* main.m */; };
 		ACFA0DDE1A7278C900A8BF7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFA0DDD1A7278C900A8BF7B /* AppDelegate.m */; };
 		ACFA0DE11A7278C900A8BF7B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFA0DE01A7278C900A8BF7B /* ViewController.m */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		AC629DE81A72971F0009D6E7 /* star-md-@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-md-@2x.png"; sourceTree = "<group>"; };
 		AC629DEA1A7299F50009D6E7 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		AC629DEC1A729DB60009D6E7 /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
 		ACFA0DD51A7278C900A8BF7B /* chif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chif.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACFA0DD91A7278C900A8BF7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACFA0DDA1A7278C900A8BF7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		ACFA0DCC1A7278C900A8BF7B = {
 			isa = PBXGroup;
 			children = (
+				AC629DEC1A729DB60009D6E7 /* screenshot.png */,
 				ACFA0E111A727BC600A8BF7B /* README.md */,
 				ACFA0DD71A7278C900A8BF7B /* chif */,
 				ACFA0DD61A7278C900A8BF7B /* Products */,
@@ -221,6 +224,7 @@
 				AC629DE91A72971F0009D6E7 /* star-md-@2x.png in Resources */,
 				ACFA0DE91A7278C900A8BF7B /* LaunchScreen.xib in Resources */,
 				ACFA0DE61A7278C900A8BF7B /* Images.xcassets in Resources */,
+				AC629DED1A729DB60009D6E7 /* screenshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

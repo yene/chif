@@ -1,9 +1,9 @@
+# chif
+After GIF, chif is the new way to enjoy animated gifs.
 
-
-
-## TODO
-* use better gif renderer that does not use much ram
+![screenshot](screenshot.png?raw=true)
 
 ## Credit
-* https://github.com/mayoff/uiimage-from-animated-gif/
+* https://github.com/Flipboard/FLAnimatedImage
 * https://useiconic.com/
+* http://www.reddit.com/r/gifs
