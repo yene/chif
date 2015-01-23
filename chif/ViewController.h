@@ -2,14 +2,12 @@
 //  ViewController.h
 //  chif
 //
-//  Created by Yannick Weiss on 23.01.15.
-//  Copyright (c) 2015 GBI. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
 @class FLAnimatedImageView;
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <MFMailComposeViewControllerDelegate>
 - (IBAction)previous:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *previous;
 

@@ -58,8 +58,8 @@
                                     <action selector="toggleNSFW:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aZ0-Uq-s3N"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XA2-Al-1rH">
-                                <rect key="frame" x="338" y="443" width="32" height="29"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XA2-Al-1rH">
+                                <rect key="frame" x="16" y="551" width="32" height="29"/>
                                 <state key="normal" image="share-boxed-md-.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -70,6 +70,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="XA2-Al-1rH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="CBg-iC-cs5"/>
                             <constraint firstAttribute="trailing" secondItem="xXG-ee-Zpe" secondAttribute="trailing" constant="16" id="DGI-a4-Oy4"/>
                             <constraint firstItem="OPF-PR-ieE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GVO-Gv-jmH"/>
                             <constraint firstItem="OPF-PR-ieE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IEx-FC-poc"/>
@@ -81,6 +82,7 @@
                             <constraint firstItem="lcz-FH-S4E" firstAttribute="top" secondItem="x8F-0K-cdZ" secondAttribute="bottom" constant="8" id="RJo-ga-ztL"/>
                             <constraint firstAttribute="bottom" secondItem="OPF-PR-ieE" secondAttribute="bottom" constant="226" id="es4-Ix-JXw"/>
                             <constraint firstAttribute="centerX" secondItem="lcz-FH-S4E" secondAttribute="centerX" id="fTl-rg-MpV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XA2-Al-1rH" secondAttribute="bottom" constant="20" id="lh0-YX-1aP"/>
                             <constraint firstItem="xXG-ee-Zpe" firstAttribute="top" secondItem="OPF-PR-ieE" secondAttribute="bottom" constant="56" id="ruu-zE-ORH"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xXG-ee-Zpe" secondAttribute="bottom" constant="20" id="xet-FQ-9yQ"/>
                         </constraints>

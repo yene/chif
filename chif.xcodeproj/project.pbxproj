@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		AC629DE91A72971F0009D6E7 /* star-md-@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC629DE81A72971F0009D6E7 /* star-md-@2x.png */; };
+		AC629DEB1A7299F50009D6E7 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC629DEA1A7299F50009D6E7 /* MessageUI.framework */; };
 		ACFA0DDB1A7278C900A8BF7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFA0DDA1A7278C900A8BF7B /* main.m */; };
 		ACFA0DDE1A7278C900A8BF7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFA0DDD1A7278C900A8BF7B /* AppDelegate.m */; };
 		ACFA0DE11A7278C900A8BF7B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFA0DE01A7278C900A8BF7B /* ViewController.m */; };
 		ACFA0DE41A7278C900A8BF7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACFA0DE21A7278C900A8BF7B /* Main.storyboard */; };
 		ACFA0DE61A7278C900A8BF7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACFA0DE51A7278C900A8BF7B /* Images.xcassets */; };
 		ACFA0DE91A7278C900A8BF7B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACFA0DE71A7278C900A8BF7B /* LaunchScreen.xib */; };
-		ACFA0DF51A7278CA00A8BF7B /* chifTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFA0DF41A7278CA00A8BF7B /* chifTests.m */; };
 		ACFA0E001A7279A000A8BF7B /* arrow-thick-left-fill-large-acute-lg-@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACFA0DFF1A7279A000A8BF7B /* arrow-thick-left-fill-large-acute-lg-@2x.png */; };
 		ACFA0E021A7279BC00A8BF7B /* arrow-thick-right-fill-large-acute-lg-@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACFA0E011A7279BC00A8BF7B /* arrow-thick-right-fill-large-acute-lg-@2x.png */; };
 		ACFA0E081A727ACA00A8BF7B /* caret-right-lg-@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACFA0E071A727ACA00A8BF7B /* caret-right-lg-@2x.png */; };
@@ -28,18 +28,9 @@
 		ACFA0E251A728CD400A8BF7B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFA0E241A728CD400A8BF7B /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		ACFA0DEF1A7278CA00A8BF7B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACFA0DCD1A7278C900A8BF7B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ACFA0DD41A7278C900A8BF7B;
-			remoteInfo = chif;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		AC629DE81A72971F0009D6E7 /* star-md-@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-md-@2x.png"; sourceTree = "<group>"; };
+		AC629DEA1A7299F50009D6E7 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		ACFA0DD51A7278C900A8BF7B /* chif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chif.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACFA0DD91A7278C900A8BF7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACFA0DDA1A7278C900A8BF7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,9 +41,6 @@
 		ACFA0DE31A7278C900A8BF7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACFA0DE51A7278C900A8BF7B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ACFA0DE81A7278C900A8BF7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		ACFA0DEE1A7278CA00A8BF7B /* chifTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chifTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACFA0DF31A7278CA00A8BF7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACFA0DF41A7278CA00A8BF7B /* chifTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chifTests.m; sourceTree = "<group>"; };
 		ACFA0DFF1A7279A000A8BF7B /* arrow-thick-left-fill-large-acute-lg-@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-thick-left-fill-large-acute-lg-@2x.png"; sourceTree = "<group>"; };
 		ACFA0E011A7279BC00A8BF7B /* arrow-thick-right-fill-large-acute-lg-@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-thick-right-fill-large-acute-lg-@2x.png"; sourceTree = "<group>"; };
 		ACFA0E071A727ACA00A8BF7B /* caret-right-lg-@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "caret-right-lg-@2x.png"; sourceTree = "<group>"; };
@@ -74,17 +62,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC629DEB1A7299F50009D6E7 /* MessageUI.framework in Frameworks */,
 				ACFA0E251A728CD400A8BF7B /* MobileCoreServices.framework in Frameworks */,
 				ACFA0E231A728CCD00A8BF7B /* QuartzCore.framework in Frameworks */,
 				ACFA0E211A728CC500A8BF7B /* CoreGraphics.framework in Frameworks */,
 				ACFA0E141A727C1A00A8BF7B /* ImageIO.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACFA0DEB1A7278CA00A8BF7B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,12 +76,8 @@
 		ACFA0DCC1A7278C900A8BF7B = {
 			isa = PBXGroup;
 			children = (
-				ACFA0E241A728CD400A8BF7B /* MobileCoreServices.framework */,
-				ACFA0E221A728CCD00A8BF7B /* QuartzCore.framework */,
-				ACFA0E201A728CC500A8BF7B /* CoreGraphics.framework */,
 				ACFA0E111A727BC600A8BF7B /* README.md */,
 				ACFA0DD71A7278C900A8BF7B /* chif */,
-				ACFA0DF11A7278CA00A8BF7B /* chifTests */,
 				ACFA0DD61A7278C900A8BF7B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				ACFA0DD51A7278C900A8BF7B /* chif.app */,
-				ACFA0DEE1A7278CA00A8BF7B /* chifTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,23 +116,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		ACFA0DF11A7278CA00A8BF7B /* chifTests */ = {
-			isa = PBXGroup;
-			children = (
-				ACFA0DF41A7278CA00A8BF7B /* chifTests.m */,
-				ACFA0DF21A7278CA00A8BF7B /* Supporting Files */,
-			);
-			path = chifTests;
-			sourceTree = "<group>";
-		};
-		ACFA0DF21A7278CA00A8BF7B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				ACFA0DF31A7278CA00A8BF7B /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		ACFA0DFE1A72797C00A8BF7B /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +133,10 @@
 			isa = PBXGroup;
 			children = (
 				ACFA0E191A728C0B00A8BF7B /* FLAnimatedImage */,
+				AC629DEA1A7299F50009D6E7 /* MessageUI.framework */,
+				ACFA0E241A728CD400A8BF7B /* MobileCoreServices.framework */,
+				ACFA0E221A728CCD00A8BF7B /* QuartzCore.framework */,
+				ACFA0E201A728CC500A8BF7B /* CoreGraphics.framework */,
 				ACFA0E131A727C1A00A8BF7B /* ImageIO.framework */,
 			);
 			name = Frameworks;
@@ -210,24 +174,6 @@
 			productReference = ACFA0DD51A7278C900A8BF7B /* chif.app */;
 			productType = "com.apple.product-type.application";
 		};
-		ACFA0DED1A7278CA00A8BF7B /* chifTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ACFA0DFB1A7278CA00A8BF7B /* Build configuration list for PBXNativeTarget "chifTests" */;
-			buildPhases = (
-				ACFA0DEA1A7278CA00A8BF7B /* Sources */,
-				ACFA0DEB1A7278CA00A8BF7B /* Frameworks */,
-				ACFA0DEC1A7278CA00A8BF7B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ACFA0DF01A7278CA00A8BF7B /* PBXTargetDependency */,
-			);
-			name = chifTests;
-			productName = chifTests;
-			productReference = ACFA0DEE1A7278CA00A8BF7B /* chifTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -240,10 +186,6 @@
 					ACFA0DD41A7278C900A8BF7B = {
 						CreatedOnToolsVersion = 6.1;
 						DevelopmentTeam = NDJHDNKXD6;
-					};
-					ACFA0DED1A7278CA00A8BF7B = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = ACFA0DD41A7278C900A8BF7B;
 					};
 				};
 			};
@@ -261,7 +203,6 @@
 			projectRoot = "";
 			targets = (
 				ACFA0DD41A7278C900A8BF7B /* chif */,
-				ACFA0DED1A7278CA00A8BF7B /* chifTests */,
 			);
 		};
 /* End PBXProject section */
@@ -283,13 +224,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ACFA0DEC1A7278CA00A8BF7B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -305,23 +239,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ACFA0DEA1A7278CA00A8BF7B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ACFA0DF51A7278CA00A8BF7B /* chifTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		ACFA0DF01A7278CA00A8BF7B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ACFA0DD41A7278C900A8BF7B /* chif */;
-			targetProxy = ACFA0DEF1A7278CA00A8BF7B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		ACFA0DE21A7278C900A8BF7B /* Main.storyboard */ = {
@@ -377,7 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -413,7 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -449,40 +367,6 @@
 			};
 			name = Release;
 		};
-		ACFA0DFC1A7278CA00A8BF7B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = chifTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chif.app/chif";
-			};
-			name = Debug;
-		};
-		ACFA0DFD1A7278CA00A8BF7B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = chifTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chif.app/chif";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -500,15 +384,6 @@
 			buildConfigurations = (
 				ACFA0DF91A7278CA00A8BF7B /* Debug */,
 				ACFA0DFA1A7278CA00A8BF7B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ACFA0DFB1A7278CA00A8BF7B /* Build configuration list for PBXNativeTarget "chifTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ACFA0DFC1A7278CA00A8BF7B /* Debug */,
-				ACFA0DFD1A7278CA00A8BF7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

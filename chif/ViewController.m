@@ -2,12 +2,10 @@
 //  ViewController.m
 //  chif
 //
-//  Created by Yannick Weiss on 23.01.15.
-//  Copyright (c) 2015 GBI. All rights reserved.
-//
 
 #import "ViewController.h"
 #import "FLAnimatedImage.h"
+
 
 @interface ViewController () {
     BOOL NSFW;
@@ -70,6 +68,16 @@
 }
 
 - (IBAction)share:(id)sender {
+    if ([MFMailComposeViewController canSendMail]) {
+        NSArray *saved = [[NSUserDefaults standardUserDefaults] arrayForKey:@"saved"];
+        NSString *gifList = [saved componentsJoinedByString:@"\n"];
+        
+        MFMailComposeViewController *mail = [[MFMailComposeViewController alloc] init];
+        mail.mailComposeDelegate = self;
+        [mail setSubject:@"GIFS I LOVE"];
+        [mail setMessageBody:gifList isHTML:NO];
+        [self presentViewController:mail animated:YES completion:NULL];
+    }
 }
 
 - (void)nextGif {
@@ -101,6 +109,11 @@
     NSURLRequest *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.reddit.com/r/gifs.json"]];
     NSData *data = [NSURLConnection sendSynchronousRequest:urlRequest returningResponse:nil error:nil];
     return [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+}
+
+#pragma mark - MFMailComposeViewControllerDelegate methods
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
+    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 @end
