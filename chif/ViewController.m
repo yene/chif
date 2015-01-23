@@ -79,8 +79,16 @@
 }
 
 - (void)displayGif {
-    FLAnimatedImage *image = [FLAnimatedImage animatedImageWithGIFData:[NSData dataWithContentsOfURL:gifs[position]]];
-    self.gifView.animatedImage = image;
+    UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc]initWithFrame:CGRectMake(135,140,50,50)];
+    [spinner startAnimating];
+    [self.gifView addSubview:spinner];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        FLAnimatedImage *image = [FLAnimatedImage animatedImageWithGIFData:[NSData dataWithContentsOfURL:gifs[position]]];
+        self.gifView.animatedImage = image;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [spinner removeFromSuperview];
+        });
+    });
 }
 
 - (NSDictionary *)gifsJSON {
