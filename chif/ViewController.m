@@ -11,6 +11,8 @@
 
 @interface ViewController () {
     BOOL NSFW;
+    NSUInteger position;
+    NSArray *results;
 }
 
 
@@ -22,8 +24,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    UIImage *gif = [UIImage animatedImageWithAnimatedGIFURL:[NSURL URLWithString:@"http://i.imgur.com/07tFt.gif"]];
-    self.imageView.image = gif;
+    NSDictionary *gifsJSON = [self gifsJSON];
+    results = [gifsJSON valueForKeyPath:@"data.children"];
+    for (NSDictionary *entries in results) {
+        position++;
+        
+        NSDictionary *theGOODStuff = [entries valueForKey:@"data"];
+        if ([[theGOODStuff valueForKey:@"over_18"] boolValue] && !NSFW) continue;
+        
+        UIImage *gif = [UIImage animatedImageWithAnimatedGIFURL:[NSURL URLWithString:[theGOODStuff valueForKey:@"url"]]];
+        self.imageView.image = gif;
+        break;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,4 +59,11 @@
         [sender setTitle:@"NSFW off" forState:UIControlStateNormal];
     }
 }
+
+- (NSDictionary *)gifsJSON {
+    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.reddit.com/r/gifs.json"]];
+    NSData *data = [NSURLConnection sendSynchronousRequest:urlRequest returningResponse:nil error:nil];
+    return [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+}
+
 @end
