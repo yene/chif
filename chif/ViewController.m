@@ -12,7 +12,7 @@
 @interface ViewController () {
     BOOL NSFW;
     NSUInteger position;
-    NSArray *results;
+    NSMutableArray *gifs;
 }
 
 
@@ -23,18 +23,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+    gifs = [NSMutableArray array];
+    [self loadGifs];
+    [self displayGif];
+}
+
+- (void)loadGifs {
+    position = 0;
     NSDictionary *gifsJSON = [self gifsJSON];
-    results = [gifsJSON valueForKeyPath:@"data.children"];
+    NSArray *results = [gifsJSON valueForKeyPath:@"data.children"];
+    [gifs removeAllObjects];
     for (NSDictionary *entries in results) {
-        position++;
-        
         NSDictionary *theGOODStuff = [entries valueForKey:@"data"];
         if ([[theGOODStuff valueForKey:@"over_18"] boolValue] && !NSFW) continue;
-        
-        UIImage *gif = [UIImage animatedImageWithAnimatedGIFURL:[NSURL URLWithString:[theGOODStuff valueForKey:@"url"]]];
-        self.imageView.image = gif;
-        break;
+        [gifs addObject:[NSURL URLWithString:[theGOODStuff valueForKey:@"url"]]];
     }
 }
 
@@ -44,10 +46,13 @@
 }
 
 - (IBAction)next:(id)sender {
+    [self nextGif];
 }
 - (IBAction)previous:(id)sender {
+    [self previousGif];
 }
 - (IBAction)save:(id)sender {
+    //yolo
 }
 
 - (IBAction)toggleNSFW:(id)sender {
@@ -58,6 +63,24 @@
     } else {
         [sender setTitle:@"NSFW off" forState:UIControlStateNormal];
     }
+    [self loadGifs];
+}
+
+- (void)nextGif {
+    position++;
+    if (position == [gifs count]) position = 0;
+    [self displayGif];
+}
+
+- (void)previousGif {
+    position--;
+    if (position == 0) position = [gifs count];
+    [self displayGif];
+}
+
+- (void)displayGif {
+    UIImage *gif = [UIImage animatedImageWithAnimatedGIFURL:gifs[position]];
+    self.imageView.image = gif;
 }
 
 - (NSDictionary *)gifsJSON {
