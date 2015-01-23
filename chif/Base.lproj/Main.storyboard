@@ -17,8 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Umo-QI-1fd">
-                                <rect key="frame" x="16" y="429" width="128" height="153"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcz-FH-S4E">
+                                <rect key="frame" x="239" y="480" width="100" height="100"/>
+                                <state key="normal" image="star-md-.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a2Z-Mr-SYd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Umo-QI-1fd">
+                                <rect key="frame" x="16" y="430" width="150" height="150"/>
                                 <state key="normal" image="caret-left-lg-.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -26,26 +35,8 @@
                                     <action selector="previous:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zLO-oZ-6Ss"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcz-FH-S4E">
-                                <rect key="frame" x="233" y="479" width="84" height="76"/>
-                                <state key="normal" image="data-transfer-download-md-.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a2Z-Mr-SYd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8F-0K-cdZ">
-                                <rect key="frame" x="256" y="20" width="66" height="30"/>
-                                <state key="normal" title="NSFW off">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="toggleNSFW:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aZ0-Uq-s3N"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXG-ee-Zpe">
-                                <rect key="frame" x="379" y="421" width="183" height="171"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXG-ee-Zpe">
+                                <rect key="frame" x="434" y="430" width="150" height="150"/>
                                 <state key="normal" image="caret-right-lg-.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -53,12 +44,46 @@
                                     <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mN4-zo-jyd"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OPF-PR-ieE" customClass="FLAnimatedImageView">
-                                <rect key="frame" x="50" y="66" width="450" height="300"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OPF-PR-ieE" customClass="FLAnimatedImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="374"/>
+                                <color key="backgroundColor" red="0.2156862745" green="0.58039215690000001" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.79206928453947367" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8F-0K-cdZ">
+                                <rect key="frame" x="256" y="442" width="66" height="30"/>
+                                <state key="normal" title="NSFW off">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleNSFW:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aZ0-Uq-s3N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XA2-Al-1rH">
+                                <rect key="frame" x="338" y="443" width="32" height="29"/>
+                                <state key="normal" image="share-boxed-md-.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="share:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ni-Aw-GFi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xXG-ee-Zpe" secondAttribute="trailing" constant="16" id="DGI-a4-Oy4"/>
+                            <constraint firstItem="OPF-PR-ieE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GVO-Gv-jmH"/>
+                            <constraint firstItem="OPF-PR-ieE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IEx-FC-poc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lcz-FH-S4E" secondAttribute="bottom" constant="20" id="IS9-4d-T5T"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Umo-QI-1fd" secondAttribute="bottom" constant="20" id="N9u-dc-try"/>
+                            <constraint firstAttribute="centerX" secondItem="x8F-0K-cdZ" secondAttribute="centerX" id="NJP-95-uk6"/>
+                            <constraint firstAttribute="trailing" secondItem="OPF-PR-ieE" secondAttribute="trailing" id="NvD-Ti-qUa"/>
+                            <constraint firstItem="Umo-QI-1fd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="P1j-am-zvT"/>
+                            <constraint firstItem="lcz-FH-S4E" firstAttribute="top" secondItem="x8F-0K-cdZ" secondAttribute="bottom" constant="8" id="RJo-ga-ztL"/>
+                            <constraint firstAttribute="bottom" secondItem="OPF-PR-ieE" secondAttribute="bottom" constant="226" id="es4-Ix-JXw"/>
+                            <constraint firstAttribute="centerX" secondItem="lcz-FH-S4E" secondAttribute="centerX" id="fTl-rg-MpV"/>
+                            <constraint firstItem="xXG-ee-Zpe" firstAttribute="top" secondItem="OPF-PR-ieE" secondAttribute="bottom" constant="56" id="ruu-zE-ORH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xXG-ee-Zpe" secondAttribute="bottom" constant="20" id="xet-FQ-9yQ"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="gifView" destination="OPF-PR-ieE" id="5Yo-j0-yZi"/>
@@ -73,6 +98,7 @@
     <resources>
         <image name="caret-left-lg-.png" width="80" height="128"/>
         <image name="caret-right-lg-.png" width="80" height="128"/>
-        <image name="data-transfer-download-md-.png" width="20" height="32"/>
+        <image name="share-boxed-md-.png" width="32" height="29"/>
+        <image name="star-md-.png" width="32" height="31"/>
     </resources>
 </document>

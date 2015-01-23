@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC629DE91A72971F0009D6E7 /* star-md-@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC629DE81A72971F0009D6E7 /* star-md-@2x.png */; };
 		ACFA0DDB1A7278C900A8BF7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFA0DDA1A7278C900A8BF7B /* main.m */; };
 		ACFA0DDE1A7278C900A8BF7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFA0DDD1A7278C900A8BF7B /* AppDelegate.m */; };
 		ACFA0DE11A7278C900A8BF7B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFA0DE01A7278C900A8BF7B /* ViewController.m */; };
@@ -18,8 +19,6 @@
 		ACFA0E021A7279BC00A8BF7B /* arrow-thick-right-fill-large-acute-lg-@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACFA0E011A7279BC00A8BF7B /* arrow-thick-right-fill-large-acute-lg-@2x.png */; };
 		ACFA0E081A727ACA00A8BF7B /* caret-right-lg-@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACFA0E071A727ACA00A8BF7B /* caret-right-lg-@2x.png */; };
 		ACFA0E0A1A727AD400A8BF7B /* caret-left-lg-@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACFA0E091A727AD400A8BF7B /* caret-left-lg-@2x.png */; };
-		ACFA0E0C1A727AF400A8BF7B /* circle-x-md-@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACFA0E0B1A727AF400A8BF7B /* circle-x-md-@2x.png */; };
-		ACFA0E0E1A727B0000A8BF7B /* data-transfer-download-md-@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACFA0E0D1A727B0000A8BF7B /* data-transfer-download-md-@2x.png */; };
 		ACFA0E101A727B3900A8BF7B /* share-boxed-md-@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACFA0E0F1A727B3900A8BF7B /* share-boxed-md-@2x.png */; };
 		ACFA0E141A727C1A00A8BF7B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFA0E131A727C1A00A8BF7B /* ImageIO.framework */; };
 		ACFA0E1E1A728C0B00A8BF7B /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFA0E1B1A728C0B00A8BF7B /* FLAnimatedImage.m */; };
@@ -40,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC629DE81A72971F0009D6E7 /* star-md-@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-md-@2x.png"; sourceTree = "<group>"; };
 		ACFA0DD51A7278C900A8BF7B /* chif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chif.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACFA0DD91A7278C900A8BF7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACFA0DDA1A7278C900A8BF7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -57,8 +57,6 @@
 		ACFA0E011A7279BC00A8BF7B /* arrow-thick-right-fill-large-acute-lg-@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-thick-right-fill-large-acute-lg-@2x.png"; sourceTree = "<group>"; };
 		ACFA0E071A727ACA00A8BF7B /* caret-right-lg-@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "caret-right-lg-@2x.png"; sourceTree = "<group>"; };
 		ACFA0E091A727AD400A8BF7B /* caret-left-lg-@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "caret-left-lg-@2x.png"; sourceTree = "<group>"; };
-		ACFA0E0B1A727AF400A8BF7B /* circle-x-md-@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-x-md-@2x.png"; sourceTree = "<group>"; };
-		ACFA0E0D1A727B0000A8BF7B /* data-transfer-download-md-@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "data-transfer-download-md-@2x.png"; sourceTree = "<group>"; };
 		ACFA0E0F1A727B3900A8BF7B /* share-boxed-md-@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-boxed-md-@2x.png"; sourceTree = "<group>"; };
 		ACFA0E111A727BC600A8BF7B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ACFA0E131A727C1A00A8BF7B /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
@@ -161,12 +159,11 @@
 		ACFA0DFE1A72797C00A8BF7B /* images */ = {
 			isa = PBXGroup;
 			children = (
+				AC629DE81A72971F0009D6E7 /* star-md-@2x.png */,
 				ACFA0E091A727AD400A8BF7B /* caret-left-lg-@2x.png */,
 				ACFA0E071A727ACA00A8BF7B /* caret-right-lg-@2x.png */,
 				ACFA0E011A7279BC00A8BF7B /* arrow-thick-right-fill-large-acute-lg-@2x.png */,
 				ACFA0DFF1A7279A000A8BF7B /* arrow-thick-left-fill-large-acute-lg-@2x.png */,
-				ACFA0E0D1A727B0000A8BF7B /* data-transfer-download-md-@2x.png */,
-				ACFA0E0B1A727AF400A8BF7B /* circle-x-md-@2x.png */,
 				ACFA0E0F1A727B3900A8BF7B /* share-boxed-md-@2x.png */,
 			);
 			name = images;
@@ -242,6 +239,7 @@
 				TargetAttributes = {
 					ACFA0DD41A7278C900A8BF7B = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = NDJHDNKXD6;
 					};
 					ACFA0DED1A7278CA00A8BF7B = {
 						CreatedOnToolsVersion = 6.1;
@@ -278,9 +276,8 @@
 				ACFA0E101A727B3900A8BF7B /* share-boxed-md-@2x.png in Resources */,
 				ACFA0E021A7279BC00A8BF7B /* arrow-thick-right-fill-large-acute-lg-@2x.png in Resources */,
 				ACFA0E081A727ACA00A8BF7B /* caret-right-lg-@2x.png in Resources */,
-				ACFA0E0E1A727B0000A8BF7B /* data-transfer-download-md-@2x.png in Resources */,
-				ACFA0E0C1A727AF400A8BF7B /* circle-x-md-@2x.png in Resources */,
 				ACFA0DE41A7278C900A8BF7B /* Main.storyboard in Resources */,
+				AC629DE91A72971F0009D6E7 /* star-md-@2x.png in Resources */,
 				ACFA0DE91A7278C900A8BF7B /* LaunchScreen.xib in Resources */,
 				ACFA0DE61A7278C900A8BF7B /* Images.xcassets in Resources */,
 			);
@@ -428,10 +425,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = chif/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -439,10 +439,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = chif/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -499,6 +502,7 @@
 				ACFA0DFA1A7278CA00A8BF7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACFA0DFB1A7278CA00A8BF7B /* Build configuration list for PBXNativeTarget "chifTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +511,7 @@
 				ACFA0DFD1A7278CA00A8BF7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

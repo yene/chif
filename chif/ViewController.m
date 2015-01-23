@@ -52,7 +52,10 @@
     [self previousGif];
 }
 - (IBAction)save:(id)sender {
-    //yolo
+    NSMutableArray *saved = [NSMutableArray arrayWithArray:[[NSUserDefaults standardUserDefaults] arrayForKey:@"saved"]];
+    [saved addObject:[gifs[position] absoluteString]];
+    [[NSUserDefaults standardUserDefaults] setObject:saved forKey:@"saved"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (IBAction)toggleNSFW:(id)sender {
@@ -64,6 +67,9 @@
         [sender setTitle:@"NSFW off" forState:UIControlStateNormal];
     }
     [self loadGifs];
+}
+
+- (IBAction)share:(id)sender {
 }
 
 - (void)nextGif {

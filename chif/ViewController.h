@@ -22,6 +22,7 @@
 
 - (IBAction)toggleNSFW:(id)sender;
 
+- (IBAction)share:(id)sender;
 
 @end
 
