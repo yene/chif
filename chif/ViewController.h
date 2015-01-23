@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@class FLAnimatedImageView;
 
 @interface ViewController : UIViewController
 - (IBAction)previous:(id)sender;
@@ -15,7 +16,7 @@
 - (IBAction)next:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *next;
 
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet FLAnimatedImageView *gifView;
 
 - (IBAction)save:(id)sender;
 

@@ -44,9 +44,6 @@
                                     <action selector="toggleNSFW:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aZ0-Uq-s3N"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vG9-fD-NXb">
-                                <rect key="frame" x="54" y="58" width="483" height="339"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXG-ee-Zpe">
                                 <rect key="frame" x="379" y="421" width="183" height="171"/>
                                 <state key="normal" image="caret-right-lg-.png">
@@ -56,11 +53,15 @@
                                     <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mN4-zo-jyd"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OPF-PR-ieE" customClass="FLAnimatedImageView">
+                                <rect key="frame" x="50" y="66" width="450" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="vG9-fD-NXb" id="gAP-Em-giz"/>
+                        <outlet property="gifView" destination="OPF-PR-ieE" id="5Yo-j0-yZi"/>
                         <outlet property="next" destination="xXG-ee-Zpe" id="iUe-2Z-q69"/>
                         <outlet property="previous" destination="Umo-QI-1fd" id="Oug-hl-LZG"/>
                     </connections>

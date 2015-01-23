@@ -22,7 +22,11 @@
 		ACFA0E0E1A727B0000A8BF7B /* data-transfer-download-md-@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACFA0E0D1A727B0000A8BF7B /* data-transfer-download-md-@2x.png */; };
 		ACFA0E101A727B3900A8BF7B /* share-boxed-md-@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACFA0E0F1A727B3900A8BF7B /* share-boxed-md-@2x.png */; };
 		ACFA0E141A727C1A00A8BF7B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFA0E131A727C1A00A8BF7B /* ImageIO.framework */; };
-		ACFA0E181A727C6800A8BF7B /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFA0E171A727C6800A8BF7B /* UIImage+animatedGIF.m */; };
+		ACFA0E1E1A728C0B00A8BF7B /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFA0E1B1A728C0B00A8BF7B /* FLAnimatedImage.m */; };
+		ACFA0E1F1A728C0B00A8BF7B /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFA0E1D1A728C0B00A8BF7B /* FLAnimatedImageView.m */; };
+		ACFA0E211A728CC500A8BF7B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFA0E201A728CC500A8BF7B /* CoreGraphics.framework */; };
+		ACFA0E231A728CCD00A8BF7B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFA0E221A728CCD00A8BF7B /* QuartzCore.framework */; };
+		ACFA0E251A728CD400A8BF7B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFA0E241A728CD400A8BF7B /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +62,13 @@
 		ACFA0E0F1A727B3900A8BF7B /* share-boxed-md-@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-boxed-md-@2x.png"; sourceTree = "<group>"; };
 		ACFA0E111A727BC600A8BF7B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ACFA0E131A727C1A00A8BF7B /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		ACFA0E161A727C6800A8BF7B /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
-		ACFA0E171A727C6800A8BF7B /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		ACFA0E1A1A728C0B00A8BF7B /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
+		ACFA0E1B1A728C0B00A8BF7B /* FLAnimatedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImage.m; sourceTree = "<group>"; };
+		ACFA0E1C1A728C0B00A8BF7B /* FLAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImageView.h; sourceTree = "<group>"; };
+		ACFA0E1D1A728C0B00A8BF7B /* FLAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImageView.m; sourceTree = "<group>"; };
+		ACFA0E201A728CC500A8BF7B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ACFA0E221A728CCD00A8BF7B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ACFA0E241A728CD400A8BF7B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +76,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFA0E251A728CD400A8BF7B /* MobileCoreServices.framework in Frameworks */,
+				ACFA0E231A728CCD00A8BF7B /* QuartzCore.framework in Frameworks */,
+				ACFA0E211A728CC500A8BF7B /* CoreGraphics.framework in Frameworks */,
 				ACFA0E141A727C1A00A8BF7B /* ImageIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +96,9 @@
 		ACFA0DCC1A7278C900A8BF7B = {
 			isa = PBXGroup;
 			children = (
+				ACFA0E241A728CD400A8BF7B /* MobileCoreServices.framework */,
+				ACFA0E221A728CCD00A8BF7B /* QuartzCore.framework */,
+				ACFA0E201A728CC500A8BF7B /* CoreGraphics.framework */,
 				ACFA0E111A727BC600A8BF7B /* README.md */,
 				ACFA0DD71A7278C900A8BF7B /* chif */,
 				ACFA0DF11A7278CA00A8BF7B /* chifTests */,
@@ -160,12 +175,22 @@
 		ACFA0E151A727C3900A8BF7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ACFA0E161A727C6800A8BF7B /* UIImage+animatedGIF.h */,
-				ACFA0E171A727C6800A8BF7B /* UIImage+animatedGIF.m */,
+				ACFA0E191A728C0B00A8BF7B /* FLAnimatedImage */,
 				ACFA0E131A727C1A00A8BF7B /* ImageIO.framework */,
 			);
 			name = Frameworks;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		ACFA0E191A728C0B00A8BF7B /* FLAnimatedImage */ = {
+			isa = PBXGroup;
+			children = (
+				ACFA0E1A1A728C0B00A8BF7B /* FLAnimatedImage.h */,
+				ACFA0E1B1A728C0B00A8BF7B /* FLAnimatedImage.m */,
+				ACFA0E1C1A728C0B00A8BF7B /* FLAnimatedImageView.h */,
+				ACFA0E1D1A728C0B00A8BF7B /* FLAnimatedImageView.m */,
+			);
+			path = FLAnimatedImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,8 +302,9 @@
 			files = (
 				ACFA0DE11A7278C900A8BF7B /* ViewController.m in Sources */,
 				ACFA0DDE1A7278C900A8BF7B /* AppDelegate.m in Sources */,
-				ACFA0E181A727C6800A8BF7B /* UIImage+animatedGIF.m in Sources */,
+				ACFA0E1E1A728C0B00A8BF7B /* FLAnimatedImage.m in Sources */,
 				ACFA0DDB1A7278C900A8BF7B /* main.m in Sources */,
+				ACFA0E1F1A728C0B00A8BF7B /* FLAnimatedImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

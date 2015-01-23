@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "UIImage+animatedGIF.h"
+#import "FLAnimatedImage.h"
 
 @interface ViewController () {
     BOOL NSFW;
@@ -79,8 +79,8 @@
 }
 
 - (void)displayGif {
-    UIImage *gif = [UIImage animatedImageWithAnimatedGIFURL:gifs[position]];
-    self.imageView.image = gif;
+    FLAnimatedImage *image = [FLAnimatedImage animatedImageWithGIFData:[NSData dataWithContentsOfURL:gifs[position]]];
+    self.gifView.animatedImage = image;
 }
 
 - (NSDictionary *)gifsJSON {
