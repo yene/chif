@@ -22,6 +22,8 @@
 		ACFA0E0E1A727B0000A8BF7B /* data-transfer-download-md-@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACFA0E0D1A727B0000A8BF7B /* data-transfer-download-md-@2x.png */; };
 		ACFA0E101A727B3900A8BF7B /* share-boxed-md-@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACFA0E0F1A727B3900A8BF7B /* share-boxed-md-@2x.png */; };
 		ACFA0E121A727BC600A8BF7B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = ACFA0E111A727BC600A8BF7B /* README.md */; };
+		ACFA0E141A727C1A00A8BF7B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFA0E131A727C1A00A8BF7B /* ImageIO.framework */; };
+		ACFA0E181A727C6800A8BF7B /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFA0E171A727C6800A8BF7B /* UIImage+animatedGIF.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		ACFA0E0D1A727B0000A8BF7B /* data-transfer-download-md-@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "data-transfer-download-md-@2x.png"; sourceTree = "<group>"; };
 		ACFA0E0F1A727B3900A8BF7B /* share-boxed-md-@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-boxed-md-@2x.png"; sourceTree = "<group>"; };
 		ACFA0E111A727BC600A8BF7B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		ACFA0E131A727C1A00A8BF7B /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		ACFA0E161A727C6800A8BF7B /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		ACFA0E171A727C6800A8BF7B /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFA0E141A727C1A00A8BF7B /* ImageIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +113,7 @@
 				ACFA0DE51A7278C900A8BF7B /* Images.xcassets */,
 				ACFA0DE71A7278C900A8BF7B /* LaunchScreen.xib */,
 				ACFA0DD81A7278C900A8BF7B /* Supporting Files */,
+				ACFA0E151A727C3900A8BF7B /* Frameworks */,
 			);
 			path = chif;
 			sourceTree = "<group>";
@@ -149,6 +156,17 @@
 				ACFA0E0F1A727B3900A8BF7B /* share-boxed-md-@2x.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		ACFA0E151A727C3900A8BF7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACFA0E161A727C6800A8BF7B /* UIImage+animatedGIF.h */,
+				ACFA0E171A727C6800A8BF7B /* UIImage+animatedGIF.m */,
+				ACFA0E131A727C1A00A8BF7B /* ImageIO.framework */,
+			);
+			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +279,7 @@
 				ACFA0DE11A7278C900A8BF7B /* ViewController.m in Sources */,
 				ACFA0DDE1A7278C900A8BF7B /* AppDelegate.m in Sources */,
 				ACFA0E121A727BC600A8BF7B /* README.md in Sources */,
+				ACFA0E181A727C6800A8BF7B /* UIImage+animatedGIF.m in Sources */,
 				ACFA0DDB1A7278C900A8BF7B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,6 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = chif/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -396,6 +416,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = chif/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
